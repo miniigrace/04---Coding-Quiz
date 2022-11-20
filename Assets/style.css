@@ -9,9 +9,67 @@ body {
     background-color: #edefe2;
 }
 
-.start_btn {
+.start_btn, .instruction_box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2a3c5f;
+    padding: 15px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.instruction_box {
+    width: 540px;
+    background: #2a3c5f;
+    border-radius: 5px;
+    color: #edefe2;
+}
+
+.instruction_box .inst_title {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.instruction_box .instructions {
+    padding: 15px 35px ;
+}
+
+.instruction_box .instructions .content {
+    margin: 15px 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+span {
+    color: aqua;
+    font-weight: 600;
+}
+
+.instruction_box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    border-top: 1px solid lightgrey;
+}
+
+.instruction_box .buttons button {
+    margin: 0 5px;
+    height: 30px;
+    width: 100px;
+    
 }
