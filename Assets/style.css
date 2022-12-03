@@ -9,20 +9,11 @@ body {
     background-color: #edefe2;
 }
 
-.start_btn, .instruction_box {
+.instruction_box, .question-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.start_btn button {
-    font-size: 25px;
-    font-weight: 500;
-    color: #2a3c5f;
-    padding: 15px 30px;
-    border-radius: 15px;
-    cursor: pointer;
 }
 
 .instruction_box {
@@ -58,7 +49,7 @@ span {
     font-weight: 600;
 }
 
-.instruction_box .buttons {
+.instruction_box .start_btn {
     height: 60px;
     display: flex;
     align-items: center;
@@ -67,9 +58,50 @@ span {
     border-top: 1px solid lightgrey;
 }
 
-.instruction_box .buttons button {
+.start_btn .start_btn1 {
     margin: 0 5px;
-    height: 30px;
-    width: 100px;
-    
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: transparent;
+    background: #9de6ef;
+    color: #3f4040;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
 }
+
+.start_btn .start_btn1:hover {
+    color: #2a3c5f;
+    background: #edefe2;
+} 
+
+.question-container {
+    height: 60%;
+    width: 600px;
+    max-width: 60%;
+    background-color: #edefe2;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 0 5px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.btn {
+    border: 1px solid #0a1c40;
+    background-color: #2a3c5f;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #edefe2;
+}
+
+.btn:hover {
+    background-color: #edefe2;
+    color: #0a1c40;
+}
+

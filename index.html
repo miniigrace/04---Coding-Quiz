@@ -8,7 +8,7 @@
     <title>Coding Quiz Challenge</title>
 </head>
 <body>
-    <div class="start_btn"><button> Start Quiz</button></div>
+    <!-- Quiz criteria-->
     <div class="instruction_box">
         <div class="inst_title">
             <h2>Coding Quiz Challenge</h2>
@@ -17,13 +17,24 @@
             <p class="content"> Try to answer the following code-related questions within the time limit.</p>
             <p class="content"> Keep in mind, the incorrect answers will penalize your score/time by <span>10 seconds</span>.</p>
         </div>
-        <div class="buttons">
-        <button class="exit">Exit Quiz</button>
-        <button class="continue">Continue</button>
+        <div class="start_btn">
+        <button class="start_btn1">Start Quiz</button>
         </div>
     </div>
+    <!-- Question container-->
+    <div class="question-container">
+    <div id="question-box" class="hide">
+        <div id="question"> Question </div>
+        <div id="answer-btn" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="next-btn" class="next-btn btn hide">Next</button>
 
-    <div id="questions"> </div>
     <div id="check"></div>
 
     <script src="./script.js"></script>
