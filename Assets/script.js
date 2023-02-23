@@ -17,14 +17,14 @@ var answerCheck = document.getElementById("answerCheck");
 var summary = document.getElementById("summary");
 var submitInitialBtn = document.getElementById("submitInitialBtn");
 var initialInput = document.getElementById("initialInput");
-var everything = document.getElementById("everything");
+var rules = document.getElementById("rules");
 
 var highScoreSection = document.getElementById("highScoreSection");
 var finalScore = document.getElementById("finalScore");
 
 var goBackBtn = document.getElementById("goBackBtn");
 var clearHighScoreBtn = document.getElementById("clearHighScoreBtn"); 
-var viewHighScore = document.getElementById("viewHighScore");
+var highScore = document.getElementById("highScore");
 var listOfHighScores = document.getElementById("listOfHighScores");
 
 
@@ -51,14 +51,14 @@ const questions = [
         answer: "c. alerts"
     },
     {
-        question: "How do you add a comment in a JavaScript?",
-        choices: ["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
-        answer: "a. //This is a comment"
+        question: "The condition in an if / else statement is enclosed with _____.",
+        choices: ["a. parenthesis", "b. quotes", "c. 'curly brackets", "d. square brackets"],
+        answer: "a. parenthesis"
     },
     {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        choices: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
-        answer: "a. onclick"
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["a. console log", "b. for loops", "c. alerts", "d. terminal"],
+        answer: "a. console log"
     }
 ];
 
