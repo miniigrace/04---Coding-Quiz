@@ -12,3 +12,10 @@ This Challenge invites me to build a timed coding quiz with multiple-choice ques
 The following animation demonstrates the application functionality:
 
 ![codingdemo](https://user-images.githubusercontent.com/112984208/220855507-12e4d38a-479d-41b7-a107-cc8fdac30008.gif)
+
+## [Click here](https://miniigrace.github.io/04---Coding-Quiz/) for live page
+
+## Credits
+* Instructor Robert Wijtman
+* University of California, Berkeley Extension Bootcamp
+* Youtube
