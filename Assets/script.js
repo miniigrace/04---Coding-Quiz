@@ -229,7 +229,7 @@ submitInitialBtn.addEventListener("click", function(event){
     storeHighScores(event);
 });
 
-viewHighScore.addEventListener("click", function(event) { 
+highScore.addEventListener("click", function(event) { 
     showHighScores(event);
 });
 
