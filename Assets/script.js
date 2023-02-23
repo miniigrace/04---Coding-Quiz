@@ -103,7 +103,7 @@ function nextQuestion() {
     choiceD.textContent = questions[questionIndex].choices[3];
 }
 
-// after question is answered, show if correct or wrong
+// shows wrong and correct answers
 function checkAnswer(answer) {
 
     var lineBreak = document.getElementById("lineBreak");
@@ -111,23 +111,20 @@ function checkAnswer(answer) {
     answerCheck.style.display = "block";
 
     if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
-        // correct answer, add 1 score to final score
         correctAns++;
-        // console.log(correctAns);
         answerCheck.textContent = "Correct!";
     } else {
-        // wrong answer, deduct 10 second from timer
+        //deduct 10 seconds from timer if answer is wrong
         totalTime -= 10;
         timeLeft.textContent = totalTime;
-        answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
+        answerCheck.textContent = "Incorrect! The correct answer is: " + questions[questionIndex].answer;
     }
 
+
     questionIndex++;
-    // repeat with the rest of questions 
     if (questionIndex < questions.length) {
         nextQuestion();
     } else {
-        // if no more question, run game over function
         gameOver();
     }
 }
@@ -140,7 +137,7 @@ function chooseC() { checkAnswer(2); }
 
 function chooseD() { checkAnswer(3); }
 
-// when all questions are answered or timer reaches 0, game over
+// game over when time runs out
 function gameOver() {
     summary.style.display = "block";
     questionDiv.style.display = "none";
@@ -156,7 +153,6 @@ function gameOver() {
 function storeHighScores(event) {
     event.preventDefault();
 
-    // stop function is initial is blank
     if (initialInput.value === "") {
         alert("Please enter your initials!");
         return;
