@@ -33,3 +33,31 @@ var questionNum = 0;
 var scoreResult;
 var questionIndex = 0;
 
+// Set of questions
+const questions = [
+    {
+        question: "String values must be enclosed within _____ when being assigned to variables.",
+        choices: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
+        answer: "c. quotes"
+    },
+    {
+        question: "Arrays in JavaScript can be used to store _____.",
+        choices: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
+        answer: "b. other arrays"
+    },
+    {
+        question: "Commonly used data types DO NOT include:",
+        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
+        answer: "c. alerts"
+    },
+    {
+        question: "How do you add a comment in a JavaScript?",
+        choices: ["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
+        answer: "a. //This is a comment"
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        choices: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
+        answer: "a. onclick"
+    }
+];
