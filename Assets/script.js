@@ -61,3 +61,32 @@ const questions = [
         answer: "a. onclick"
     }
 ];
+
+// Functions
+
+// Timer starts when start button clicked
+var totalTime = 100;
+function newQuiz() {
+    questionIndex = 0;
+    totalTime = 100;
+    timeLeft.textContent = totalTime;
+    initialInput.textContent = "";
+
+    startDiv.style.display = "none";
+    questionDiv.style.display = "block";
+    timer.style.display = "block";
+    timesUp.style.display = "none";
+
+    var startTimer = setInterval(function() {
+        totalTime--;
+        timeLeft.textContent = totalTime;
+        if(totalTime <= 0) {
+            clearInterval(startTimer);
+            if (questionIndex < questions.length - 1) {
+                gameOver();
+            }
+        }
+    },1000);
+
+    showQuiz();
+};
